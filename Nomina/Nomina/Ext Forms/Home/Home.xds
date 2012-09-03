@@ -1,0 +1,145 @@
+{
+    "name": "Home.xds",
+    "projectId": "08AEA26B-17AB-4167-8E30-096B779CAADB",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyViewport",
+            "cid": "viewport",
+            "jsClass": "MyViewport",
+            "snapToGrid": 10,
+            "userConfig": {
+                "tpl": "",
+                "layout": "border"
+            },
+            "cn": [
+                {
+                    "id": "MyPanel",
+                    "cid": "panel",
+                    "jsClass": "MyPanel",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "title": "My Panel",
+                        "region": "center"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyTabPanel",
+                            "cid": "tabpanel",
+                            "jsClass": "MyTabPanel",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "activeTab": 0,
+                                "autoRef": "tabPrincipal"
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyPanel3",
+                                    "cid": "panel",
+                                    "jsClass": "MyPanel3",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "title": "Tab 1"
+                                    },
+                                    "cn": [
+                                        {
+                                            "id": "MyToolbar",
+                                            "cid": "toolbar",
+                                            "jsClass": "MyToolbar",
+                                            "dock": "tbar",
+                                            "snapToGrid": 10,
+                                            "cn": [
+                                                {
+                                                    "id": "MyButton",
+                                                    "cid": "button",
+                                                    "jsClass": "MyButton",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "text": "MyButton",
+                                                        "autoRef": "btnCreatabs"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "MyPanel4",
+                                    "cid": "panel",
+                                    "jsClass": "MyPanel4",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "title": "Tab 2"
+                                    }
+                                },
+                                {
+                                    "id": "MyPanel5",
+                                    "cid": "panel",
+                                    "jsClass": "MyPanel5",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "title": "Tab 3"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MyTreePanel",
+                    "cid": "treepanel",
+                    "jsClass": "MyPanel1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "title": "My Panel",
+                        "region": "west",
+                        "width": 116
+                    },
+                    "cn": [
+                        {
+                            "id": "MyAsyncTreeNode",
+                            "cid": "asynctreenode",
+                            "jsClass": "MyAsyncTreeNode",
+                            "dock": "root",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Tree Node"
+                            }
+                        },
+                        {
+                            "id": "MyTreeLoader",
+                            "cid": "treeloader",
+                            "jsClass": "MyTreeLoader",
+                            "dock": "loader",
+                            "snapToGrid": 10
+                        }
+                    ]
+                },
+                {
+                    "id": "MyPanel2",
+                    "cid": "panel",
+                    "jsClass": "MyPanel2",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "title": "My Panel",
+                        "region": "north",
+                        "width": 100,
+                        "height": 100
+                    }
+                }
+            ]
+        }
+    ],
+    "stores": []
+}

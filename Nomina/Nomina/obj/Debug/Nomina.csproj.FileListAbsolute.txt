@@ -1,0 +1,5 @@
+C:\Users\Santos\Desktop\Catalogos de Nomina\Nomina\Nomina\bin\Nomina.dll
+C:\Users\Santos\Desktop\Catalogos de Nomina\Nomina\Nomina\bin\Nomina.pdb
+C:\Users\Santos\Desktop\Catalogos de Nomina\Nomina\Nomina\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Santos\Desktop\Catalogos de Nomina\Nomina\Nomina\obj\Debug\Nomina.dll
+C:\Users\Santos\Desktop\Catalogos de Nomina\Nomina\Nomina\obj\Debug\Nomina.pdb

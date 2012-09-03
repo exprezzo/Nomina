@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MARPAC_PruebaModelStoreContainer" CdmEntityContainer="MARPAC_PruebaEntities">
+    <EntitySetMapping Name="Aguinaldos">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.Aguinaldo">
+        <MappingFragment StoreEntitySet="Aguinaldos">
+          <ScalarProperty Name="NumAgui" ColumnName="NumAgui" />
+          <ScalarProperty Name="NombreAguinaldo" ColumnName="NombreAguinaldo" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AguinaldosDetalles">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.AguinaldosDetalle">
+        <MappingFragment StoreEntitySet="AguinaldosDetalle">
+          <ScalarProperty Name="NumAgui" ColumnName="NumAgui" />
+          <ScalarProperty Name="LINF" ColumnName="LINF" />
+          <ScalarProperty Name="LSUP" ColumnName="LSUP" />
+          <ScalarProperty Name="DIAS" ColumnName="DIAS" />
+          <ScalarProperty Name="ID_AguinalDetalle" ColumnName="ID_AguinalDetalle" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AreasDepartamentos">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.AreasDepartamento">
+        <MappingFragment StoreEntitySet="AreasDepartamentos">
+          <ScalarProperty Name="ID_CliPlazaSuc" ColumnName="ID_CliPlazaSuc" />
+          <ScalarProperty Name="AreaDepartamento" ColumnName="AreaDepartamento" />
+          <ScalarProperty Name="NombreAreaDepartamento" ColumnName="NombreAreaDepartamento" />
+          <ScalarProperty Name="FolioObra" ColumnName="FolioObra" />
+          <ScalarProperty Name="NombreObra" ColumnName="NombreObra" />
+          <ScalarProperty Name="RegistroPatronalObra" ColumnName="RegistroPatronalObra" />
+          <ScalarProperty Name="UbicacionObra" ColumnName="UbicacionObra" />
+          <ScalarProperty Name="CuentaContable" ColumnName="CuentaContable" />
+          <ScalarProperty Name="ID_EmpPlazaSuc" ColumnName="ID_EmpPlazaSuc" />
+          <ScalarProperty Name="ID_AreaDepto" ColumnName="ID_AreaDepto" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bancos">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.Banco">
+        <MappingFragment StoreEntitySet="Bancos">
+          <ScalarProperty Name="CodigoBanco" ColumnName="CodigoBanco" />
+          <ScalarProperty Name="NombreBanco" ColumnName="NombreBanco" />
+          <ScalarProperty Name="CodigoProveedor" ColumnName="CodigoProveedor" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.Cliente">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="ID_Cliente" ColumnName="ID_Cliente" />
+          <ScalarProperty Name="CodigoCliente" ColumnName="CodigoCliente" />
+          <ScalarProperty Name="NombreCliente" ColumnName="NombreCliente" />
+          <ScalarProperty Name="Nombrecomercial" ColumnName="Nombrecomercial" />
+          <ScalarProperty Name="CodigoRegimen" ColumnName="CodigoRegimen" />
+          <ScalarProperty Name="Nacional" ColumnName="Nacional" />
+          <ScalarProperty Name="Calle" ColumnName="Calle" />
+          <ScalarProperty Name="NumeroExterior" ColumnName="NumeroExterior" />
+          <ScalarProperty Name="NumeroInterior" ColumnName="NumeroInterior" />
+          <ScalarProperty Name="CodigoPostal" ColumnName="CodigoPostal" />
+          <ScalarProperty Name="Colonia" ColumnName="Colonia" />
+          <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+          <ScalarProperty Name="Municipio" ColumnName="Municipio" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="CodigoPais" ColumnName="CodigoPais" />
+          <ScalarProperty Name="Telefono1" ColumnName="Telefono1" />
+          <ScalarProperty Name="Telefono2" ColumnName="Telefono2" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email1" ColumnName="Email1" />
+          <ScalarProperty Name="Email2" ColumnName="Email2" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="CodigoZonaIVA" ColumnName="CodigoZonaIVA" />
+          <ScalarProperty Name="CodigoBanco" ColumnName="CodigoBanco" />
+          <ScalarProperty Name="Comision" ColumnName="Comision" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientesPlazas">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.ClientesPlaza">
+        <MappingFragment StoreEntitySet="ClientesPlazas">
+          <ScalarProperty Name="ID_Cliente" ColumnName="ID_Cliente" />
+          <ScalarProperty Name="ClientePlazaSucursal" ColumnName="ClientePlazaSucursal" />
+          <ScalarProperty Name="NombrePlazaSucursal" ColumnName="NombrePlazaSucursal" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_CliPlazaSuc" ColumnName="ID_CliPlazaSuc" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeclaracionImpuestos">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.DeclaracionImpuesto">
+        <MappingFragment StoreEntitySet="DeclaracionImpuestos">
+          <ScalarProperty Name="Anio" ColumnName="Anio" />
+          <ScalarProperty Name="ID_Empresa" ColumnName="ID_Empresa" />
+          <ScalarProperty Name="CodigoEmpleado" ColumnName="CodigoEmpleado" />
+          <ScalarProperty Name="Empleado" ColumnName="Empleado" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="IMSS" ColumnName="IMSS" />
+          <ScalarProperty Name="FechaAlta" ColumnName="FechaAlta" />
+          <ScalarProperty Name="FechaBaja" ColumnName="FechaBaja" />
+          <ScalarProperty Name="DiasTrabajados" ColumnName="DiasTrabajados" />
+          <ScalarProperty Name="DiasTabla" ColumnName="DiasTabla" />
+          <ScalarProperty Name="Gravado" ColumnName="Gravado" />
+          <ScalarProperty Name="Exento" ColumnName="Exento" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="GravadoTabla" ColumnName="GravadoTabla" />
+          <ScalarProperty Name="ISPTTabla" ColumnName="ISPTTabla" />
+          <ScalarProperty Name="SubsidioAnual" ColumnName="SubsidioAnual" />
+          <ScalarProperty Name="ISPTCausa" ColumnName="ISPTCausa" />
+          <ScalarProperty Name="ISPTRetenido" ColumnName="ISPTRetenido" />
+          <ScalarProperty Name="SubsidioPagado" ColumnName="SubsidioPagado" />
+          <ScalarProperty Name="ISPTCargo" ColumnName="ISPTCargo" />
+          <ScalarProperty Name="ISPTFavor" ColumnName="ISPTFavor" />
+          <ScalarProperty Name="Topado" ColumnName="Topado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empresas">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.Empresa">
+        <MappingFragment StoreEntitySet="Empresas">
+          <ScalarProperty Name="ID_Empresa" ColumnName="ID_Empresa" />
+          <ScalarProperty Name="CodigoEmpresa" ColumnName="CodigoEmpresa" />
+          <ScalarProperty Name="NombreEmpresa" ColumnName="NombreEmpresa" />
+          <ScalarProperty Name="Nombrecomercial" ColumnName="Nombrecomercial" />
+          <ScalarProperty Name="CodigoRegimen" ColumnName="CodigoRegimen" />
+          <ScalarProperty Name="Nacional" ColumnName="Nacional" />
+          <ScalarProperty Name="Calle" ColumnName="Calle" />
+          <ScalarProperty Name="NumeroExterior" ColumnName="NumeroExterior" />
+          <ScalarProperty Name="NumeroInterior" ColumnName="NumeroInterior" />
+          <ScalarProperty Name="CodigoPostal" ColumnName="CodigoPostal" />
+          <ScalarProperty Name="Colonia" ColumnName="Colonia" />
+          <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+          <ScalarProperty Name="Municipio" ColumnName="Municipio" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="CodigoPais" ColumnName="CodigoPais" />
+          <ScalarProperty Name="Telefono1" ColumnName="Telefono1" />
+          <ScalarProperty Name="Telefono2" ColumnName="Telefono2" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email1" ColumnName="Email1" />
+          <ScalarProperty Name="Email2" ColumnName="Email2" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="CodigoZonaIVA" ColumnName="CodigoZonaIVA" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmpresasBancos">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.EmpresasBanco">
+        <MappingFragment StoreEntitySet="EmpresasBancos">
+          <ScalarProperty Name="ID_Empresa" ColumnName="ID_Empresa" />
+          <ScalarProperty Name="CodigoLayOut" ColumnName="CodigoLayOut" />
+          <ScalarProperty Name="NumeroControl" ColumnName="NumeroControl" />
+          <ScalarProperty Name="Sucursal" ColumnName="Sucursal" />
+          <ScalarProperty Name="CuentaRetiro" ColumnName="CuentaRetiro" />
+          <ScalarProperty Name="NumeroControlEstrategia" ColumnName="NumeroControlEstrategia" />
+          <ScalarProperty Name="SucursalEstrategia" ColumnName="SucursalEstrategia" />
+          <ScalarProperty Name="CuentaRetiroEstrategia" ColumnName="CuentaRetiroEstrategia" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_EmpBanco" ColumnName="ID_EmpBanco" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmpresasPlazas">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.EmpresasPlaza">
+        <MappingFragment StoreEntitySet="EmpresasPlazas">
+          <ScalarProperty Name="ID_Empresa" ColumnName="ID_Empresa" />
+          <ScalarProperty Name="EmpresaPlazaSucursal" ColumnName="EmpresaPlazaSucursal" />
+          <ScalarProperty Name="NombrePlazaSucursal" ColumnName="NombrePlazaSucursal" />
+          <ScalarProperty Name="RegistroPatronal" ColumnName="RegistroPatronal" />
+          <ScalarProperty Name="ZonaMinimo" ColumnName="ZonaMinimo" />
+          <ScalarProperty Name="ImpuestoEstado" ColumnName="ImpuestoEstado" />
+          <ScalarProperty Name="GuiaAfiliacion" ColumnName="GuiaAfiliacion" />
+          <ScalarProperty Name="GuiaAuditoria" ColumnName="GuiaAuditoria" />
+          <ScalarProperty Name="Calle" ColumnName="Calle" />
+          <ScalarProperty Name="NumeroExterior" ColumnName="NumeroExterior" />
+          <ScalarProperty Name="NumeroInterior" ColumnName="NumeroInterior" />
+          <ScalarProperty Name="CodigoPostal" ColumnName="CodigoPostal" />
+          <ScalarProperty Name="Colonia" ColumnName="Colonia" />
+          <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+          <ScalarProperty Name="Municipio" ColumnName="Municipio" />
+          <ScalarProperty Name="CodigoEstado" ColumnName="CodigoEstado" />
+          <ScalarProperty Name="CodigoPais" ColumnName="CodigoPais" />
+          <ScalarProperty Name="Telefono1" ColumnName="Telefono1" />
+          <ScalarProperty Name="Telefono2" ColumnName="Telefono2" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email1" ColumnName="Email1" />
+          <ScalarProperty Name="Email2" ColumnName="Email2" />
+          <ScalarProperty Name="RepresentanteLegal" ColumnName="RepresentanteLegal" />
+          <ScalarProperty Name="ContadorGeneral" ColumnName="ContadorGeneral" />
+          <ScalarProperty Name="EncargadoNominas" ColumnName="EncargadoNominas" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_EmpPlazaSuc" ColumnName="ID_EmpPlazaSuc" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estados">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.Estado">
+        <MappingFragment StoreEntitySet="Estados">
+          <ScalarProperty Name="CodigoEstado" ColumnName="CodigoEstado" />
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstadosImpuestos">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.EstadosImpuesto">
+        <MappingFragment StoreEntitySet="EstadosImpuestos">
+          <ScalarProperty Name="ID_EstadoConcepto" ColumnName="ID_EstadoConcepto" />
+          <ScalarProperty Name="CodigoEstado" ColumnName="CodigoEstado" />
+          <ScalarProperty Name="CodigoPercepcion" ColumnName="CodigoPercepcion" />
+          <ScalarProperty Name="TipoExento" ColumnName="TipoExento" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LayoutBancos">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.LayoutBanco">
+        <MappingFragment StoreEntitySet="LayoutBancos">
+          <ScalarProperty Name="CodigoLayout" ColumnName="CodigoLayout" />
+          <ScalarProperty Name="CodigoBanco" ColumnName="CodigoBanco" />
+          <ScalarProperty Name="NombreLayout" ColumnName="NombreLayout" />
+          <ScalarProperty Name="NumeroLayout" ColumnName="NumeroLayout" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Monedas">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.Moneda">
+        <MappingFragment StoreEntitySet="Monedas">
+          <ScalarProperty Name="ID_Moneda" ColumnName="ID_Moneda" />
+          <ScalarProperty Name="CodigoMoneda" ColumnName="CodigoMoneda" />
+          <ScalarProperty Name="NombreMoneda" ColumnName="NombreMoneda" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Niveles">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.Nivele">
+        <MappingFragment StoreEntitySet="Niveles">
+          <ScalarProperty Name="CodigoNivel" ColumnName="CodigoNivel" />
+          <ScalarProperty Name="NombreNivel" ColumnName="NombreNivel" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paises">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.Pais">
+        <MappingFragment StoreEntitySet="Paises">
+          <ScalarProperty Name="CodigoPais" ColumnName="CodigoPais" />
+          <ScalarProperty Name="NombrePais" ColumnName="NombrePais" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Percepciones">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.Percepcione">
+        <MappingFragment StoreEntitySet="Percepciones">
+          <ScalarProperty Name="CodigoPercepcion" ColumnName="CodigoPercepcion" />
+          <ScalarProperty Name="NombrePercepcion" ColumnName="NombrePercepcion" />
+          <ScalarProperty Name="TipoPercepcion" ColumnName="TipoPercepcion" />
+          <ScalarProperty Name="CalculoFijo" ColumnName="CalculoFijo" />
+          <ScalarProperty Name="UsaCantidad" ColumnName="UsaCantidad" />
+          <ScalarProperty Name="PrevisionSocial" ColumnName="PrevisionSocial" />
+          <ScalarProperty Name="Tope7SMAG" ColumnName="Tope7SMAG" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+          <ScalarProperty Name="Abreviado" ColumnName="Abreviado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Puestos">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.Puesto">
+        <MappingFragment StoreEntitySet="Puestos">
+          <ScalarProperty Name="CodigoPuesto" ColumnName="CodigoPuesto" />
+          <ScalarProperty Name="NombrePuesto" ColumnName="NombrePuesto" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegimenesFiscales">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.RegimenesFiscale">
+        <MappingFragment StoreEntitySet="RegimenesFiscales">
+          <ScalarProperty Name="CodigoRegimen" ColumnName="CodigoRegimen" />
+          <ScalarProperty Name="NombreRegimen" ColumnName="NombreRegimen" />
+          <ScalarProperty Name="PideCURP" ColumnName="PideCURP" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TablaISPTs">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.TablaISPT">
+        <MappingFragment StoreEntitySet="TablaISPT">
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Desde" ColumnName="Desde" />
+          <ScalarProperty Name="Hasta" ColumnName="Hasta" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_Tispt" ColumnName="ID_Tispt" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TablaISPTDetalles">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.TablaISPTDetalle">
+        <MappingFragment StoreEntitySet="TablaISPTDetalle">
+          <ScalarProperty Name="ID_Tispt" ColumnName="ID_Tispt" />
+          <ScalarProperty Name="LINF" ColumnName="LINF" />
+          <ScalarProperty Name="LSUP" ColumnName="LSUP" />
+          <ScalarProperty Name="CFIJA" ColumnName="CFIJA" />
+          <ScalarProperty Name="POREXCED" ColumnName="POREXCED" />
+          <ScalarProperty Name="ID_TisptDetalle" ColumnName="ID_TisptDetalle" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vacaciones">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.Vacacione">
+        <MappingFragment StoreEntitySet="Vacaciones">
+          <ScalarProperty Name="NumVaca" ColumnName="NumVaca" />
+          <ScalarProperty Name="NombreVacacion" ColumnName="NombreVacacion" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZonasIVAs">
+      <EntityTypeMapping TypeName="MARPAC_PruebaModel.ZonasIVA">
+        <MappingFragment StoreEntitySet="ZonasIVA">
+          <ScalarProperty Name="CodigoZonaIVA" ColumnName="CodigoZonaIVA" />
+          <ScalarProperty Name="NombreZonaIVA" ColumnName="NombreZonaIVA" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ID_UsuarioAlta" ColumnName="ID_UsuarioAlta" />
+          <ScalarProperty Name="RegistroAlta" ColumnName="RegistroAlta" />
+          <ScalarProperty Name="ID_UsuarioCambio" ColumnName="ID_UsuarioCambio" />
+          <ScalarProperty Name="RegistroCambio" ColumnName="RegistroCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

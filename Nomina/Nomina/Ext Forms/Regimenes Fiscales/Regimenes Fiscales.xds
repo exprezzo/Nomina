@@ -1,0 +1,225 @@
+{
+    "name": "Regimenes Fiscales.xds",
+    "projectId": "03B0C9DF-EB16-4AEF-A793-91A6F7EACEEF",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyEditorGrid",
+            "cid": "editorgrid",
+            "jsClass": "gridRegimenesFiscales",
+            "snapToGrid": 10,
+            "userConfig": {
+                "title": "Regimenes Fiscales",
+                "store": "",
+                "width": 715,
+                "height": 386
+            },
+            "userXType": "gridRegimenesFiscales",
+            "cn": [
+                {
+                    "id": "MyPagingToolbar",
+                    "cid": "pagingtoolbar",
+                    "jsClass": "MyPagingToolbar",
+                    "dock": "bbar",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "store": "",
+                        "autoRef": "paginador"
+                    }
+                },
+                {
+                    "id": "MyColumn",
+                    "cid": "numbercolumn",
+                    "jsClass": "MyColumn",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "header": "CodigoRegimen",
+                        "dataIndex": "CodigoRegimen",
+                        "sortable": true,
+                        "resizable": "-ext-undefined-",
+                        "width": 100,
+                        "align": "right"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyNumberField",
+                            "cid": "numberfield",
+                            "jsClass": "MyNumberField",
+                            "snapToGrid": 10
+                        }
+                    ]
+                },
+                {
+                    "id": "MyColumn1",
+                    "cid": "gridcolumn",
+                    "jsClass": "MyColumn1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "header": "NombreRegimen",
+                        "dataIndex": "NombreRegimen",
+                        "sortable": true,
+                        "resizable": "-ext-undefined-",
+                        "width": 100
+                    },
+                    "cn": [
+                        {
+                            "id": "MyTextField",
+                            "cid": "textfield",
+                            "jsClass": "MyTextField",
+                            "snapToGrid": 10
+                        }
+                    ]
+                },
+                {
+                    "id": "MyColumn2",
+                    "cid": "gridcolumn",
+                    "jsClass": "MyColumn2",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "header": "PideCURP",
+                        "dataIndex": "PideCURP",
+                        "sortable": true,
+                        "resizable": "-ext-undefined-",
+                        "width": 100
+                    },
+                    "cn": [
+                        {
+                            "id": "MyTextField1",
+                            "cid": "textfield",
+                            "jsClass": "MyTextField1",
+                            "snapToGrid": 10
+                        }
+                    ]
+                },
+                {
+                    "id": "MyColumn3",
+                    "cid": "gridcolumn",
+                    "jsClass": "MyColumn3",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "header": "Activo",
+                        "dataIndex": "Activo",
+                        "sortable": true,
+                        "resizable": "-ext-undefined-",
+                        "width": 100
+                    },
+                    "cn": [
+                        {
+                            "id": "MyTextField2",
+                            "cid": "textfield",
+                            "jsClass": "MyTextField2",
+                            "snapToGrid": 10
+                        }
+                    ]
+                },
+                {
+                    "id": "MyToolbar",
+                    "cid": "toolbar",
+                    "jsClass": "MyToolbar",
+                    "dock": "tbar",
+                    "snapToGrid": 10,
+                    "cn": [
+                        {
+                            "id": "MyButton",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Nuevo",
+                                "autoRef": "btnNuevo"
+                            }
+                        },
+                        {
+                            "id": "MyButton1",
+                            "cid": "button",
+                            "jsClass": "MyButton1",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Editar",
+                                "autoRef": "btnEditar"
+                            }
+                        },
+                        {
+                            "id": "MyButton2",
+                            "cid": "button",
+                            "jsClass": "MyButton2",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Eliminar",
+                                "autoRef": "btnEliminar"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": [
+        {
+            "id": "MyStore",
+            "cid": "jsonstore",
+            "jsClass": "stoRegimenesFiscales",
+            "snapToGrid": 10,
+            "userConfig": {
+                "storeId": "",
+                "idProperty": "CodigoRegimen",
+                "api": "{read: '/Home/listar',\n                create: '/Home/crear',\n                update: '/Home/guardar',\n                destroy: '/Home/eliminar'}",
+                "data": "-ext-undefined-",
+                "root": "datos"
+            },
+            "cn": [
+                {
+                    "id": "MyField",
+                    "cid": "datafield",
+                    "jsClass": "MyField",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "CodigoRegimen",
+                        "type": "int"
+                    }
+                },
+                {
+                    "id": "MyField1",
+                    "cid": "datafield",
+                    "jsClass": "MyField1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "NombreRegimen",
+                        "type": "string"
+                    }
+                },
+                {
+                    "id": "MyField2",
+                    "cid": "datafield",
+                    "jsClass": "MyField2",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "PideCURP",
+                        "type": "string"
+                    }
+                },
+                {
+                    "id": "MyField3",
+                    "cid": "datafield",
+                    "jsClass": "MyField3",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "Activo",
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    ]
+}

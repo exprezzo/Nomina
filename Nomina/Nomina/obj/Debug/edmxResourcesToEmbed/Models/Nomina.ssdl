@@ -1,0 +1,820 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MARPAC_PruebaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MARPAC_PruebaModelStoreContainer">
+    <EntitySet Name="Aguinaldos" EntityType="MARPAC_PruebaModel.Store.Aguinaldos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AguinaldosDetalle" EntityType="MARPAC_PruebaModel.Store.AguinaldosDetalle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AreasDepartamentos" EntityType="MARPAC_PruebaModel.Store.AreasDepartamentos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Bancos" EntityType="MARPAC_PruebaModel.Store.Bancos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Clientes" EntityType="MARPAC_PruebaModel.Store.Clientes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ClientesPlazas" EntityType="MARPAC_PruebaModel.Store.ClientesPlazas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DeclaracionImpuestos" EntityType="MARPAC_PruebaModel.Store.DeclaracionImpuestos" store:Type="Tables" store:Schema="dbo" store:Name="DeclaracionImpuestos">
+      <DefiningQuery>SELECT 
+      [DeclaracionImpuestos].[Anio] AS [Anio], 
+      [DeclaracionImpuestos].[ID_Empresa] AS [ID_Empresa], 
+      [DeclaracionImpuestos].[CodigoEmpleado] AS [CodigoEmpleado], 
+      [DeclaracionImpuestos].[Empleado] AS [Empleado], 
+      [DeclaracionImpuestos].[RFC] AS [RFC], 
+      [DeclaracionImpuestos].[CURP] AS [CURP], 
+      [DeclaracionImpuestos].[IMSS] AS [IMSS], 
+      [DeclaracionImpuestos].[FechaAlta] AS [FechaAlta], 
+      [DeclaracionImpuestos].[FechaBaja] AS [FechaBaja], 
+      [DeclaracionImpuestos].[DiasTrabajados] AS [DiasTrabajados], 
+      [DeclaracionImpuestos].[DiasTabla] AS [DiasTabla], 
+      [DeclaracionImpuestos].[Gravado] AS [Gravado], 
+      [DeclaracionImpuestos].[Exento] AS [Exento], 
+      [DeclaracionImpuestos].[Total] AS [Total], 
+      [DeclaracionImpuestos].[GravadoTabla] AS [GravadoTabla], 
+      [DeclaracionImpuestos].[ISPTTabla] AS [ISPTTabla], 
+      [DeclaracionImpuestos].[SubsidioAnual] AS [SubsidioAnual], 
+      [DeclaracionImpuestos].[ISPTCausa] AS [ISPTCausa], 
+      [DeclaracionImpuestos].[ISPTRetenido] AS [ISPTRetenido], 
+      [DeclaracionImpuestos].[SubsidioPagado] AS [SubsidioPagado], 
+      [DeclaracionImpuestos].[ISPTCargo] AS [ISPTCargo], 
+      [DeclaracionImpuestos].[ISPTFavor] AS [ISPTFavor], 
+      [DeclaracionImpuestos].[Topado] AS [Topado]
+      FROM [dbo].[DeclaracionImpuestos] AS [DeclaracionImpuestos]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Empresas" EntityType="MARPAC_PruebaModel.Store.Empresas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmpresasBancos" EntityType="MARPAC_PruebaModel.Store.EmpresasBancos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmpresasPlazas" EntityType="MARPAC_PruebaModel.Store.EmpresasPlazas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Estados" EntityType="MARPAC_PruebaModel.Store.Estados" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EstadosImpuestos" EntityType="MARPAC_PruebaModel.Store.EstadosImpuestos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LayoutBancos" EntityType="MARPAC_PruebaModel.Store.LayoutBancos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Monedas" EntityType="MARPAC_PruebaModel.Store.Monedas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Niveles" EntityType="MARPAC_PruebaModel.Store.Niveles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Paises" EntityType="MARPAC_PruebaModel.Store.Paises" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Percepciones" EntityType="MARPAC_PruebaModel.Store.Percepciones" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Puestos" EntityType="MARPAC_PruebaModel.Store.Puestos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RegimenesFiscales" EntityType="MARPAC_PruebaModel.Store.RegimenesFiscales" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="MARPAC_PruebaModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TablaISPT" EntityType="MARPAC_PruebaModel.Store.TablaISPT" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TablaISPTDetalle" EntityType="MARPAC_PruebaModel.Store.TablaISPTDetalle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vacaciones" EntityType="MARPAC_PruebaModel.Store.Vacaciones" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ZonasIVA" EntityType="MARPAC_PruebaModel.Store.ZonasIVA" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AguinaldosDetalle_Aguinaldos" Association="MARPAC_PruebaModel.Store.FK_AguinaldosDetalle_Aguinaldos">
+      <End Role="Aguinaldos" EntitySet="Aguinaldos" />
+      <End Role="AguinaldosDetalle" EntitySet="AguinaldosDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AreasDepartamentos_ClientesPlazas" Association="MARPAC_PruebaModel.Store.FK_AreasDepartamentos_ClientesPlazas">
+      <End Role="ClientesPlazas" EntitySet="ClientesPlazas" />
+      <End Role="AreasDepartamentos" EntitySet="AreasDepartamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AreasDepartamentos_EmpresasPlazas" Association="MARPAC_PruebaModel.Store.FK_AreasDepartamentos_EmpresasPlazas">
+      <End Role="EmpresasPlazas" EntitySet="EmpresasPlazas" />
+      <End Role="AreasDepartamentos" EntitySet="AreasDepartamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Bancos" Association="MARPAC_PruebaModel.Store.FK_Clientes_Bancos">
+      <End Role="Bancos" EntitySet="Bancos" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Paises" Association="MARPAC_PruebaModel.Store.FK_Clientes_Paises">
+      <End Role="Paises" EntitySet="Paises" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_RegimenesFiscales" Association="MARPAC_PruebaModel.Store.FK_Clientes_RegimenesFiscales">
+      <End Role="RegimenesFiscales" EntitySet="RegimenesFiscales" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_ZonasIVA" Association="MARPAC_PruebaModel.Store.FK_Clientes_ZonasIVA">
+      <End Role="ZonasIVA" EntitySet="ZonasIVA" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientesPlazas_Clientes" Association="MARPAC_PruebaModel.Store.FK_ClientesPlazas_Clientes">
+      <End Role="Clientes" EntitySet="Clientes" />
+      <End Role="ClientesPlazas" EntitySet="ClientesPlazas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Empresas_Paises" Association="MARPAC_PruebaModel.Store.FK_Empresas_Paises">
+      <End Role="Paises" EntitySet="Paises" />
+      <End Role="Empresas" EntitySet="Empresas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Empresas_RegimenesFiscales" Association="MARPAC_PruebaModel.Store.FK_Empresas_RegimenesFiscales">
+      <End Role="RegimenesFiscales" EntitySet="RegimenesFiscales" />
+      <End Role="Empresas" EntitySet="Empresas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Empresas_ZonasIVA" Association="MARPAC_PruebaModel.Store.FK_Empresas_ZonasIVA">
+      <End Role="ZonasIVA" EntitySet="ZonasIVA" />
+      <End Role="Empresas" EntitySet="Empresas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpresasBancos_Empresas" Association="MARPAC_PruebaModel.Store.FK_EmpresasBancos_Empresas">
+      <End Role="Empresas" EntitySet="Empresas" />
+      <End Role="EmpresasBancos" EntitySet="EmpresasBancos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpresasBancos_LayoutBancos" Association="MARPAC_PruebaModel.Store.FK_EmpresasBancos_LayoutBancos">
+      <End Role="LayoutBancos" EntitySet="LayoutBancos" />
+      <End Role="EmpresasBancos" EntitySet="EmpresasBancos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpresasPlazas_Empresas" Association="MARPAC_PruebaModel.Store.FK_EmpresasPlazas_Empresas">
+      <End Role="Empresas" EntitySet="Empresas" />
+      <End Role="EmpresasPlazas" EntitySet="EmpresasPlazas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpresasPlazas_Estados" Association="MARPAC_PruebaModel.Store.FK_EmpresasPlazas_Estados">
+      <End Role="Estados" EntitySet="Estados" />
+      <End Role="EmpresasPlazas" EntitySet="EmpresasPlazas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpresasPlazas_Paises" Association="MARPAC_PruebaModel.Store.FK_EmpresasPlazas_Paises">
+      <End Role="Paises" EntitySet="Paises" />
+      <End Role="EmpresasPlazas" EntitySet="EmpresasPlazas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EstadosImpuestos_Estados" Association="MARPAC_PruebaModel.Store.FK_EstadosImpuestos_Estados">
+      <End Role="Estados" EntitySet="Estados" />
+      <End Role="EstadosImpuestos" EntitySet="EstadosImpuestos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EstadosImpuestos_Percepciones" Association="MARPAC_PruebaModel.Store.FK_EstadosImpuestos_Percepciones">
+      <End Role="Percepciones" EntitySet="Percepciones" />
+      <End Role="EstadosImpuestos" EntitySet="EstadosImpuestos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LayoutBancos_Bancos" Association="MARPAC_PruebaModel.Store.FK_LayoutBancos_Bancos">
+      <End Role="Bancos" EntitySet="Bancos" />
+      <End Role="LayoutBancos" EntitySet="LayoutBancos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TablaISPTDetalle_TablaISPT" Association="MARPAC_PruebaModel.Store.FK_TablaISPTDetalle_TablaISPT">
+      <End Role="TablaISPT" EntitySet="TablaISPT" />
+      <End Role="TablaISPTDetalle" EntitySet="TablaISPTDetalle" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Aguinaldos">
+    <Key>
+      <PropertyRef Name="NumAgui" />
+    </Key>
+    <Property Name="NumAgui" Type="int" Nullable="false" />
+    <Property Name="NombreAguinaldo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AguinaldosDetalle">
+    <Key>
+      <PropertyRef Name="ID_AguinalDetalle" />
+    </Key>
+    <Property Name="NumAgui" Type="int" Nullable="false" />
+    <Property Name="LINF" Type="tinyint" Nullable="false" />
+    <Property Name="LSUP" Type="tinyint" Nullable="false" />
+    <Property Name="DIAS" Type="smallint" Nullable="false" />
+    <Property Name="ID_AguinalDetalle" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AreasDepartamentos">
+    <Key>
+      <PropertyRef Name="ID_AreaDepto" />
+    </Key>
+    <Property Name="ID_CliPlazaSuc" Type="int" Nullable="false" />
+    <Property Name="AreaDepartamento" Type="int" Nullable="false" />
+    <Property Name="NombreAreaDepartamento" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FolioObra" Type="nvarchar" MaxLength="12" />
+    <Property Name="NombreObra" Type="nvarchar" MaxLength="50" />
+    <Property Name="RegistroPatronalObra" Type="char" MaxLength="11" />
+    <Property Name="UbicacionObra" Type="nvarchar" MaxLength="50" />
+    <Property Name="CuentaContable" Type="nvarchar" MaxLength="30" />
+    <Property Name="ID_EmpPlazaSuc" Type="int" Nullable="false" />
+    <Property Name="ID_AreaDepto" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Bancos">
+    <Key>
+      <PropertyRef Name="CodigoBanco" />
+    </Key>
+    <Property Name="CodigoBanco" Type="smallint" Nullable="false" />
+    <Property Name="NombreBanco" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CodigoProveedor" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="ID_Cliente" />
+    </Key>
+    <Property Name="ID_Cliente" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoCliente" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="NombreCliente" Type="nvarchar" Nullable="false" MaxLength="80" />
+    <Property Name="Nombrecomercial" Type="nvarchar" MaxLength="60" />
+    <Property Name="CodigoRegimen" Type="int" Nullable="false" />
+    <Property Name="Nacional" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="Calle" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="NumeroExterior" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="NumeroInterior" Type="nvarchar" MaxLength="20" />
+    <Property Name="CodigoPostal" Type="int" Nullable="false" />
+    <Property Name="Colonia" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="Localidad" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="Municipio" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Estado" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="CodigoPais" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="Telefono1" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Telefono2" Type="nvarchar" MaxLength="20" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email1" Type="nvarchar" MaxLength="60" />
+    <Property Name="Email2" Type="nvarchar" MaxLength="60" />
+    <Property Name="RFC" Type="char" Nullable="false" MaxLength="13" />
+    <Property Name="CURP" Type="char" MaxLength="18" />
+    <Property Name="CodigoZonaIVA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CodigoBanco" Type="smallint" Nullable="false" />
+    <Property Name="Comision" Type="decimal" Nullable="false" Precision="10" Scale="6" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ClientesPlazas">
+    <Key>
+      <PropertyRef Name="ID_CliPlazaSuc" />
+    </Key>
+    <Property Name="ID_Cliente" Type="int" Nullable="false" />
+    <Property Name="ClientePlazaSucursal" Type="int" Nullable="false" />
+    <Property Name="NombrePlazaSucursal" Type="nvarchar" Nullable="false" MaxLength="80" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_CliPlazaSuc" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'MARPAC_Prueba.dbo.DeclaracionImpuestos' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="DeclaracionImpuestos">
+    <Key>
+      <PropertyRef Name="Anio" />
+      <PropertyRef Name="ID_Empresa" />
+      <PropertyRef Name="CodigoEmpleado" />
+      <PropertyRef Name="Empleado" />
+      <PropertyRef Name="RFC" />
+      <PropertyRef Name="CURP" />
+      <PropertyRef Name="IMSS" />
+      <PropertyRef Name="FechaAlta" />
+      <PropertyRef Name="DiasTrabajados" />
+      <PropertyRef Name="DiasTabla" />
+      <PropertyRef Name="Gravado" />
+      <PropertyRef Name="Exento" />
+      <PropertyRef Name="Total" />
+      <PropertyRef Name="GravadoTabla" />
+      <PropertyRef Name="ISPTTabla" />
+      <PropertyRef Name="SubsidioAnual" />
+      <PropertyRef Name="ISPTCausa" />
+      <PropertyRef Name="ISPTRetenido" />
+      <PropertyRef Name="SubsidioPagado" />
+      <PropertyRef Name="ISPTCargo" />
+      <PropertyRef Name="ISPTFavor" />
+      <PropertyRef Name="Topado" />
+    </Key>
+    <Property Name="Anio" Type="int" Nullable="false" />
+    <Property Name="ID_Empresa" Type="int" Nullable="false" />
+    <Property Name="CodigoEmpleado" Type="int" Nullable="false" />
+    <Property Name="Empleado" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="RFC" Type="char" Nullable="false" MaxLength="13" />
+    <Property Name="CURP" Type="char" Nullable="false" MaxLength="18" />
+    <Property Name="IMSS" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="FechaAlta" Type="datetime" Nullable="false" />
+    <Property Name="FechaBaja" Type="datetime" />
+    <Property Name="DiasTrabajados" Type="decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="DiasTabla" Type="decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="Gravado" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="Exento" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="Total" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="GravadoTabla" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="ISPTTabla" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="SubsidioAnual" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="ISPTCausa" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="ISPTRetenido" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="SubsidioPagado" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="ISPTCargo" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="ISPTFavor" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="Topado" Type="char" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Empresas">
+    <Key>
+      <PropertyRef Name="ID_Empresa" />
+    </Key>
+    <Property Name="ID_Empresa" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoEmpresa" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="NombreEmpresa" Type="nvarchar" Nullable="false" MaxLength="80" />
+    <Property Name="Nombrecomercial" Type="nvarchar" MaxLength="60" />
+    <Property Name="CodigoRegimen" Type="int" Nullable="false" />
+    <Property Name="Nacional" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="Calle" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="NumeroExterior" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="NumeroInterior" Type="nvarchar" MaxLength="20" />
+    <Property Name="CodigoPostal" Type="int" Nullable="false" />
+    <Property Name="Colonia" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="Localidad" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="Municipio" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Estado" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="CodigoPais" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="Telefono1" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Telefono2" Type="nvarchar" MaxLength="20" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email1" Type="nvarchar" MaxLength="60" />
+    <Property Name="Email2" Type="nvarchar" MaxLength="60" />
+    <Property Name="RFC" Type="char" Nullable="false" MaxLength="13" />
+    <Property Name="CURP" Type="char" MaxLength="18" />
+    <Property Name="CodigoZonaIVA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="Logo" Type="image" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EmpresasBancos">
+    <Key>
+      <PropertyRef Name="ID_EmpBanco" />
+    </Key>
+    <Property Name="ID_Empresa" Type="int" Nullable="false" />
+    <Property Name="CodigoLayOut" Type="int" />
+    <Property Name="NumeroControl" Type="nvarchar" MaxLength="20" />
+    <Property Name="Sucursal" Type="nvarchar" MaxLength="10" />
+    <Property Name="CuentaRetiro" Type="nvarchar" MaxLength="20" />
+    <Property Name="NumeroControlEstrategia" Type="nvarchar" MaxLength="20" />
+    <Property Name="SucursalEstrategia" Type="nvarchar" MaxLength="10" />
+    <Property Name="CuentaRetiroEstrategia" Type="nvarchar" MaxLength="20" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_EmpBanco" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EmpresasPlazas">
+    <Key>
+      <PropertyRef Name="ID_EmpPlazaSuc" />
+    </Key>
+    <Property Name="ID_Empresa" Type="int" Nullable="false" />
+    <Property Name="EmpresaPlazaSucursal" Type="int" Nullable="false" />
+    <Property Name="NombrePlazaSucursal" Type="nvarchar" Nullable="false" MaxLength="80" />
+    <Property Name="RegistroPatronal" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="ZonaMinimo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ImpuestoEstado" Type="decimal" Nullable="false" Precision="10" Scale="6" />
+    <Property Name="GuiaAfiliacion" Type="char" MaxLength="5" />
+    <Property Name="GuiaAuditoria" Type="char" MaxLength="5" />
+    <Property Name="Calle" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="NumeroExterior" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="NumeroInterior" Type="nvarchar" MaxLength="20" />
+    <Property Name="CodigoPostal" Type="int" Nullable="false" />
+    <Property Name="Colonia" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="Localidad" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="Municipio" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="CodigoEstado" Type="int" Nullable="false" />
+    <Property Name="CodigoPais" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="Telefono1" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Telefono2" Type="nvarchar" MaxLength="20" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email1" Type="nvarchar" MaxLength="60" />
+    <Property Name="Email2" Type="nvarchar" MaxLength="60" />
+    <Property Name="RepresentanteLegal" Type="nvarchar" MaxLength="60" />
+    <Property Name="ContadorGeneral" Type="nvarchar" MaxLength="60" />
+    <Property Name="EncargadoNominas" Type="nvarchar" MaxLength="60" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_EmpPlazaSuc" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Estados">
+    <Key>
+      <PropertyRef Name="CodigoEstado" />
+    </Key>
+    <Property Name="CodigoEstado" Type="int" Nullable="false" />
+    <Property Name="NombreEstado" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EstadosImpuestos">
+    <Key>
+      <PropertyRef Name="ID_EstadoConcepto" />
+    </Key>
+    <Property Name="ID_EstadoConcepto" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoEstado" Type="int" Nullable="false" />
+    <Property Name="CodigoPercepcion" Type="int" Nullable="false" />
+    <Property Name="TipoExento" Type="smallint" Nullable="false" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="LayoutBancos">
+    <Key>
+      <PropertyRef Name="CodigoLayout" />
+    </Key>
+    <Property Name="CodigoLayout" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoBanco" Type="smallint" Nullable="false" />
+    <Property Name="NombreLayout" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NumeroLayout" Type="int" Nullable="false" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Monedas">
+    <Key>
+      <PropertyRef Name="ID_Moneda" />
+    </Key>
+    <Property Name="ID_Moneda" Type="smallint" Nullable="false" />
+    <Property Name="CodigoMoneda" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="NombreMoneda" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Niveles">
+    <Key>
+      <PropertyRef Name="CodigoNivel" />
+    </Key>
+    <Property Name="CodigoNivel" Type="int" Nullable="false" />
+    <Property Name="NombreNivel" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Paises">
+    <Key>
+      <PropertyRef Name="CodigoPais" />
+    </Key>
+    <Property Name="CodigoPais" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="NombrePais" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Percepciones">
+    <Key>
+      <PropertyRef Name="CodigoPercepcion" />
+    </Key>
+    <Property Name="CodigoPercepcion" Type="int" Nullable="false" />
+    <Property Name="NombrePercepcion" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TipoPercepcion" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="CalculoFijo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="UsaCantidad" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="PrevisionSocial" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="Tope7SMAG" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+    <Property Name="Abreviado" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Puestos">
+    <Key>
+      <PropertyRef Name="CodigoPuesto" />
+    </Key>
+    <Property Name="CodigoPuesto" Type="int" Nullable="false" />
+    <Property Name="NombrePuesto" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="RegimenesFiscales">
+    <Key>
+      <PropertyRef Name="CodigoRegimen" />
+    </Key>
+    <Property Name="CodigoRegimen" Type="int" Nullable="false" />
+    <Property Name="NombreRegimen" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="PideCURP" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TablaISPT">
+    <Key>
+      <PropertyRef Name="ID_Tispt" />
+    </Key>
+    <Property Name="Tipo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="Desde" Type="datetime" Nullable="false" />
+    <Property Name="Hasta" Type="datetime" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_Tispt" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TablaISPTDetalle">
+    <Key>
+      <PropertyRef Name="ID_TisptDetalle" />
+    </Key>
+    <Property Name="ID_Tispt" Type="int" Nullable="false" />
+    <Property Name="LINF" Type="decimal" Nullable="false" Precision="15" Scale="2" />
+    <Property Name="LSUP" Type="decimal" Nullable="false" Precision="15" Scale="2" />
+    <Property Name="CFIJA" Type="decimal" Nullable="false" Precision="15" Scale="2" />
+    <Property Name="POREXCED" Type="decimal" Nullable="false" Precision="10" Scale="6" />
+    <Property Name="ID_TisptDetalle" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Vacaciones">
+    <Key>
+      <PropertyRef Name="NumVaca" />
+    </Key>
+    <Property Name="NumVaca" Type="int" Nullable="false" />
+    <Property Name="NombreVacacion" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ZonasIVA">
+    <Key>
+      <PropertyRef Name="CodigoZonaIVA" />
+    </Key>
+    <Property Name="CodigoZonaIVA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NombreZonaIVA" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Activo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ID_UsuarioAlta" Type="int" />
+    <Property Name="RegistroAlta" Type="datetime" />
+    <Property Name="ID_UsuarioCambio" Type="int" />
+    <Property Name="RegistroCambio" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_AguinaldosDetalle_Aguinaldos">
+    <End Role="Aguinaldos" Type="MARPAC_PruebaModel.Store.Aguinaldos" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AguinaldosDetalle" Type="MARPAC_PruebaModel.Store.AguinaldosDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aguinaldos">
+        <PropertyRef Name="NumAgui" />
+      </Principal>
+      <Dependent Role="AguinaldosDetalle">
+        <PropertyRef Name="NumAgui" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AreasDepartamentos_ClientesPlazas">
+    <End Role="ClientesPlazas" Type="MARPAC_PruebaModel.Store.ClientesPlazas" Multiplicity="1" />
+    <End Role="AreasDepartamentos" Type="MARPAC_PruebaModel.Store.AreasDepartamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientesPlazas">
+        <PropertyRef Name="ID_CliPlazaSuc" />
+      </Principal>
+      <Dependent Role="AreasDepartamentos">
+        <PropertyRef Name="ID_CliPlazaSuc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AreasDepartamentos_EmpresasPlazas">
+    <End Role="EmpresasPlazas" Type="MARPAC_PruebaModel.Store.EmpresasPlazas" Multiplicity="1" />
+    <End Role="AreasDepartamentos" Type="MARPAC_PruebaModel.Store.AreasDepartamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresasPlazas">
+        <PropertyRef Name="ID_EmpPlazaSuc" />
+      </Principal>
+      <Dependent Role="AreasDepartamentos">
+        <PropertyRef Name="ID_EmpPlazaSuc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Bancos">
+    <End Role="Bancos" Type="MARPAC_PruebaModel.Store.Bancos" Multiplicity="1" />
+    <End Role="Clientes" Type="MARPAC_PruebaModel.Store.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bancos">
+        <PropertyRef Name="CodigoBanco" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="CodigoBanco" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Paises">
+    <End Role="Paises" Type="MARPAC_PruebaModel.Store.Paises" Multiplicity="1" />
+    <End Role="Clientes" Type="MARPAC_PruebaModel.Store.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paises">
+        <PropertyRef Name="CodigoPais" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="CodigoPais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_RegimenesFiscales">
+    <End Role="RegimenesFiscales" Type="MARPAC_PruebaModel.Store.RegimenesFiscales" Multiplicity="1" />
+    <End Role="Clientes" Type="MARPAC_PruebaModel.Store.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegimenesFiscales">
+        <PropertyRef Name="CodigoRegimen" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="CodigoRegimen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_ZonasIVA">
+    <End Role="ZonasIVA" Type="MARPAC_PruebaModel.Store.ZonasIVA" Multiplicity="1" />
+    <End Role="Clientes" Type="MARPAC_PruebaModel.Store.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ZonasIVA">
+        <PropertyRef Name="CodigoZonaIVA" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="CodigoZonaIVA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientesPlazas_Clientes">
+    <End Role="Clientes" Type="MARPAC_PruebaModel.Store.Clientes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ClientesPlazas" Type="MARPAC_PruebaModel.Store.ClientesPlazas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clientes">
+        <PropertyRef Name="ID_Cliente" />
+      </Principal>
+      <Dependent Role="ClientesPlazas">
+        <PropertyRef Name="ID_Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Empresas_Paises">
+    <End Role="Paises" Type="MARPAC_PruebaModel.Store.Paises" Multiplicity="1" />
+    <End Role="Empresas" Type="MARPAC_PruebaModel.Store.Empresas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paises">
+        <PropertyRef Name="CodigoPais" />
+      </Principal>
+      <Dependent Role="Empresas">
+        <PropertyRef Name="CodigoPais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Empresas_RegimenesFiscales">
+    <End Role="RegimenesFiscales" Type="MARPAC_PruebaModel.Store.RegimenesFiscales" Multiplicity="1" />
+    <End Role="Empresas" Type="MARPAC_PruebaModel.Store.Empresas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegimenesFiscales">
+        <PropertyRef Name="CodigoRegimen" />
+      </Principal>
+      <Dependent Role="Empresas">
+        <PropertyRef Name="CodigoRegimen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Empresas_ZonasIVA">
+    <End Role="ZonasIVA" Type="MARPAC_PruebaModel.Store.ZonasIVA" Multiplicity="1" />
+    <End Role="Empresas" Type="MARPAC_PruebaModel.Store.Empresas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ZonasIVA">
+        <PropertyRef Name="CodigoZonaIVA" />
+      </Principal>
+      <Dependent Role="Empresas">
+        <PropertyRef Name="CodigoZonaIVA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpresasBancos_Empresas">
+    <End Role="Empresas" Type="MARPAC_PruebaModel.Store.Empresas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EmpresasBancos" Type="MARPAC_PruebaModel.Store.EmpresasBancos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresas">
+        <PropertyRef Name="ID_Empresa" />
+      </Principal>
+      <Dependent Role="EmpresasBancos">
+        <PropertyRef Name="ID_Empresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpresasBancos_LayoutBancos">
+    <End Role="LayoutBancos" Type="MARPAC_PruebaModel.Store.LayoutBancos" Multiplicity="0..1" />
+    <End Role="EmpresasBancos" Type="MARPAC_PruebaModel.Store.EmpresasBancos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LayoutBancos">
+        <PropertyRef Name="CodigoLayout" />
+      </Principal>
+      <Dependent Role="EmpresasBancos">
+        <PropertyRef Name="CodigoLayOut" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpresasPlazas_Empresas">
+    <End Role="Empresas" Type="MARPAC_PruebaModel.Store.Empresas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EmpresasPlazas" Type="MARPAC_PruebaModel.Store.EmpresasPlazas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresas">
+        <PropertyRef Name="ID_Empresa" />
+      </Principal>
+      <Dependent Role="EmpresasPlazas">
+        <PropertyRef Name="ID_Empresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpresasPlazas_Estados">
+    <End Role="Estados" Type="MARPAC_PruebaModel.Store.Estados" Multiplicity="1" />
+    <End Role="EmpresasPlazas" Type="MARPAC_PruebaModel.Store.EmpresasPlazas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estados">
+        <PropertyRef Name="CodigoEstado" />
+      </Principal>
+      <Dependent Role="EmpresasPlazas">
+        <PropertyRef Name="CodigoEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpresasPlazas_Paises">
+    <End Role="Paises" Type="MARPAC_PruebaModel.Store.Paises" Multiplicity="1" />
+    <End Role="EmpresasPlazas" Type="MARPAC_PruebaModel.Store.EmpresasPlazas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paises">
+        <PropertyRef Name="CodigoPais" />
+      </Principal>
+      <Dependent Role="EmpresasPlazas">
+        <PropertyRef Name="CodigoPais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EstadosImpuestos_Estados">
+    <End Role="Estados" Type="MARPAC_PruebaModel.Store.Estados" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EstadosImpuestos" Type="MARPAC_PruebaModel.Store.EstadosImpuestos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estados">
+        <PropertyRef Name="CodigoEstado" />
+      </Principal>
+      <Dependent Role="EstadosImpuestos">
+        <PropertyRef Name="CodigoEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EstadosImpuestos_Percepciones">
+    <End Role="Percepciones" Type="MARPAC_PruebaModel.Store.Percepciones" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EstadosImpuestos" Type="MARPAC_PruebaModel.Store.EstadosImpuestos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Percepciones">
+        <PropertyRef Name="CodigoPercepcion" />
+      </Principal>
+      <Dependent Role="EstadosImpuestos">
+        <PropertyRef Name="CodigoPercepcion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LayoutBancos_Bancos">
+    <End Role="Bancos" Type="MARPAC_PruebaModel.Store.Bancos" Multiplicity="1" />
+    <End Role="LayoutBancos" Type="MARPAC_PruebaModel.Store.LayoutBancos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bancos">
+        <PropertyRef Name="CodigoBanco" />
+      </Principal>
+      <Dependent Role="LayoutBancos">
+        <PropertyRef Name="CodigoBanco" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TablaISPTDetalle_TablaISPT">
+    <End Role="TablaISPT" Type="MARPAC_PruebaModel.Store.TablaISPT" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TablaISPTDetalle" Type="MARPAC_PruebaModel.Store.TablaISPTDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TablaISPT">
+        <PropertyRef Name="ID_Tispt" />
+      </Principal>
+      <Dependent Role="TablaISPTDetalle">
+        <PropertyRef Name="ID_Tispt" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
